@@ -366,6 +366,46 @@ section.skills .skills__wrapper .skill-box .progress__wrap .progress__bar .toolt
     text-transform: uppercase;
 }
 
+section.counter__section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: var(--dark-gray);
+}
+
+section.counter__section > div {
+    display: flex;
+    align-items: center;
+}
+
+section.counter__section > div i {
+    font-size: 42px;
+    margin-right: 5px;
+}
+
+section.counter__section > div:nth-child(1) i {
+    color: var(--yellow);
+}
+
+section.counter__section > div:nth-child(2) i {
+    color: var(--success);
+}
+
+section.counter__section > div:nth-child(3) i {
+    color: var(--dribbble);
+}
+
+section.counter__section > div h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--fade);
+    margin-bottom: 8px;
+}
+
+section.counter__section > div h5 {
+    font-size: 14px;
+    color: var(--fade);
+}
+
 
 section.work .wrapper {
     display: grid;
@@ -418,42 +458,44 @@ section.work .wrapper .portfolio .portfolio__wrapper a img {
 }
 
 
-section.counter__section {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    background: var(--dark-gray);
+section.work .wrapper .slider__wrapper .icon__wrap {
+    color: var(--info);
+    font-size: 26px;
+    text-align: center;
 }
 
-section.counter__section > div {
+section.work .wrapper .slider__wrapper .slider .slide p {
+    color: var(--ternary);
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-top: 2rem;
+}
+
+section.work .wrapper .slider__wrapper .slider .slide img {
+    width: 60px;
+    height:60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+section.work .wrapper .slider__wrapper .slider .slide h2 {
+    font-size: 16px;
+    color: var(--info);
+    margin-top: 1rem;
+}
+
+section.work .wrapper .slider__wrapper .slider .slide h6 {
+    color: var(--ternary);
+    margin-top: 1rem;
+}
+
+section.work .wrapper .slider__wrapper .slider .slide{
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-section.counter__section > div i {
-    font-size: 42px;
-    margin-right: 5px;
-}
-
-section.counter__section > div:nth-child(1) i {
-    color: var(--yellow);
-}
-
-section.counter__section > div:nth-child(2) i {
-    color: var(--success);
-}
-
-section.counter__section > div:nth-child(3) i {
-    color: var(--dribbble);
-}
-
-section.counter__section > div h3 {
-    font-size: 22px;
-    font-weight: 600;
-    color: var(--fade);
-    margin-bottom: 8px;
-}
-
-section.counter__section > div h5 {
-    font-size: 14px;
-    color: var(--fade);
+section.work .wrapper .slider__wrapper {
+    overflow: hidden;
 }
